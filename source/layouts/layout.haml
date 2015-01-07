@@ -13,27 +13,13 @@
     = stylesheet_link_tag "screen"
     <script src="http://code.jquery.com/jquery-1.9.0.js"></script>
     <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-    = javascript_include_tag  "all", "dev"
+    = javascript_include_tag  "all"
 
   %body
-    = javascript_include_tag  "d3dev"
     /[if lt IE 7] <p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
     .container
       .masthead
-        %h3.muted D3 Generator
-        .navbar
-          .navbar-inner
-            .container
-              %ul.nav
-                %li.active
-                  %a{:href=>"#"} Home
-                %li
-                  %a{:href=>"#"} Projects
-                %li
-                  %a{:href=>"#"} Services
-                %li
-                  %a{:href=>"#"} About
-
+        %h1.muted.text-center D3 Generator
       = yield
 
       .footer &copy; Company 2013
