@@ -1,6 +1,4 @@
 $ ->
-  window.alert('Test')
-
   margin = {top: 20, right: 20, bottom: 30, left:40}
   width = 960 - margin.left - margin.right
   height = 500 - margin.top - margin.bottom
@@ -23,7 +21,7 @@ $ ->
       .ticks(10, "%")
 
 # svgの定義
-  svg = d3.select(".jumbotron h1").append("svg")
+  svg = d3.select(".graph").append("svg")
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom)
       .append("g")
