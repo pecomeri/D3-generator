@@ -1,0 +1,47 @@
+body {
+  background: #E9E9E9;
+}
+
+h1 {
+  font-family: 'Poiret One',cursive,serif;
+  font-size:50px;
+  color: #666;
+}
+
+.my-sign {
+  font-family: 'Poiret One',cursive,serif;
+  font-size: 12px;
+  color: #999;
+}
+
+/*
+ for illustrate graph
+*/
+
+.graph {
+  background-color: #fff;
+  margin: 20px 0 20px 0;
+}
+
+.bar {
+    fill: steelblue;
+}
+
+.bar:hover {
+    fill: brown;
+}
+
+.axis {
+    font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.x.axis path {
+    display: none;
+}
