@@ -1,13 +1,12 @@
 #= require _vendor/holder/holder
 $ ->
+  $("#cont1").show()
   $(".tabs a").on "click", (e) ->
-    e.preventDefault()
-
     target = $(this).attr('href')
     
     $(".tab", $(this).closest(".tabs")).removeClass "active"
     $(this).closest(".tab").addClass "active"
-
-    $(".panel", $(target).closest(".panels")).removeClass "active"
-    $(target).addClass "active"
+    
+    $(".panel").hide()
+    $(target).fadeIn "slow"
     return

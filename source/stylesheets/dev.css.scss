@@ -96,9 +96,13 @@ button {
   }
 }
 
-.panels > .panel {
-  display: none;
+.panels {
+  clear: both;
+  overflow: hidden;
+  background: #f7f7f7;
+  height: 200px;
+  padding: 20px;
 }
-.panels > .panel.active {
-  display: block;
+.panel {
+  display: none;
 }
