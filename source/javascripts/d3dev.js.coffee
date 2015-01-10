@@ -74,8 +74,4 @@ $ ->
         .attr("width", x.rangeBand())
         .attr("y", (d) -> y(d.frequency))
         .attr("height", (d) -> height - y(d.frequency))
-
-  type (d) ->
-      d.frequency = +d.frequency
-      d
   return
