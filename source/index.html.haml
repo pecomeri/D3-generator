@@ -1,10 +1,29 @@
-.row-fluid
+.row
   .span12
     %h1.text-center D3 Generator
-.row-fluid
+.row
   .span12
     %button.btn.btn-info.btn-lg.btn-block Select Your hope
-.row-fluid
+.row
   .span12.graph
-.row-fluid
+.row
+  .span12.source-tab
+    %ul.tabs
+      %li#tab1.tab.active<
+        %a{:href => "#cont1"} タブ1
+      %li#tab2.tab<
+        %a{:href => "#cont2"} タブ2
+      %li#tab3.tab<
+        %a{:href => "#cont3"} タブ3
+.row
   .span12.source
+    .panels
+      #cont1.panel.active
+        コンテンツ1
+      #cont2.panel
+        コンテンツ2
+        %br コンテンツ2
+      #cont3.panel
+        コンテンツ3
+        %br コンテンツ3
+        コンテンツ3
