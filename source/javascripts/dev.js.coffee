@@ -8,5 +8,5 @@ $ ->
     $(this).closest(".tab").addClass "active"
     
     $(".panel").hide()
-    $(target).fadeIn "slow"
+    $(target).fadeIn "normal"
     return
