@@ -1,6 +1,7 @@
 #= require _vendor/holder/holder
 $ ->
   $("#cont1").show()
+  $("#cont1").load("/javascripts/d3dev.js")
   $(".tabs a").on "click", (e) ->
     target = $(this).attr('href')
     
